@@ -1,10 +1,9 @@
-var canvas, context, id, d, pixels;
+var canvas, context, g_scale, pixels;
 
 function init(e, scale){
     canvas = e;
     context = canvas.getContext("2d");
-    id = context.createImageData(scale, scale);
-    d = id.data;
+    g_scale = scale;
 
     pixels = [];
 
@@ -12,10 +11,11 @@ function init(e, scale){
     for (var i=0; i<(e.height)/scale; i++){
         pixels[i] = [];
         for (var j=0; j<(e.width)/scale; j++){
-            pixels[i][j] = new Pixel(i, j, j*scale, i*scale);
+            pixels[i][j] = new Pixel(i*scale, j*scale);
         }
     }
-    drawAll(pixels, scale);
+    pixels[3][4].setColor("blue");
+    drawAll(pixels);
 }
 
 function drawAll(pixels, scale){
@@ -26,9 +26,7 @@ function drawAll(pixels, scale){
     }
 }
 
-function Pixel(i, j, x, y){
-    this.i = i;
-    this.j = j;
+function Pixel(x, y){
     this.x = x;
     this.y = y;
 
@@ -39,17 +37,8 @@ function Pixel(i, j, x, y){
 
     this.draw = function(){
         
-        // using imagedata, so I need to specify the color of each pixel
-        // right now, all pixels in image data are going to be the same
-        // color
-        for (var i=0; i<d.length; i+=4){
-            d[i+0] = this.r;
-            d[i+1] = this.g;
-            d[i+2] = this.b;
-            d[i+3] = this.a;
-        }
-
-        context.putImageData(id, this.x, this.y);
+        context.fillStyle = "rgba("+this.r+","+this.g+","+this.b+","+(this.a/255)+")";
+        context.fillRect(x, y, g_scale, g_scale);
     }
     
     this.setColor = function(color){
