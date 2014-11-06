@@ -1,10 +1,167 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Charlottetown City Centre School">
+    <meta name="author" content="Charlottetown City Centre School">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-</body>
+    <title>City Centre School Registration</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link href="assets/css/animate-custom.css" rel="stylesheet">
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+    <script type="text/javascript">
+        function postform(){
+            var lastname = $("#lastname").val();
+            var firstname = $("#firstname").val();
+            var theclass = $("#class").val();
+            var email = $("#email").val();
+            var now = new Date();
+            var datetime = "" + now.getFullYear() + "-" + (now.getMonth()+1)+ "-" + now.getDate()+ " " + now.getHours()+":"+now.getMinutes();
+
+            $.ajax({
+                url: "https://docs.google.com/forms/d/1RBwevb9fSNXVJ1SbC5nbE25jVIZEznlYoVsiwq54YfI/formResponse",
+                data: {
+                    "entry_2124753836": theclass,
+                    "entry_1417581856": firstname + " " + lastname,
+                    "entry_428376581": datetime,
+                    "entry_1726273366": email
+                },
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function(){ window.location.replace("thanks.html");}
+                },
+                200: function(){ window.location.replace("thanks.html");
+                }
+            });
+        }
+
+    </script>    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+
+  	<div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon icon-leaf" style="font-size:30px; color:#3498db;"></span>
+          </button>
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-leaf" style="font-size:18px; color:#3498db;"></span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html#home" class="smoothScroll">Home</a></li>
+			<li> <a href="index.html#about" class="smoothScroll"> About</a></li>
+			<li> <a href="index.html#classes" class="smoothScroll"> Classes</a></li>
+			<li> <a href="index.html#sponsors" class="smoothScroll"> Sponsors</a></li>
+			<li> <a href="index.html#contact" class="smoothScroll"> Contact</a></li>
+            <li class='active'> <a href="register.html" class="smoothScroll active">Register</a></li>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    </div>
+
+
+
+		<!-- ==== ABOUT ==== -->
+		<div class="container" id="about" name="about">
+			<div class="row white">
+			<br>
+				<h1 class="centered">REGISTER NOW</h1>
+				<hr>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 form">
+                        <p>Just fill out these four fields and we'll record your registration. On opening night show up with your <strong>$20</strong> and be ready to learn!</p>
+                        <div class="form-group">
+                            <label for="firstname">Given Name</label>
+                            <input type="text" id="firstname" class="form-control" placeholder="Given Name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Family Name</label>
+                            <input type="text" id="lastname" class="form-control"  placeholder="Family Name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Email"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Desired Class</label>
+                            <select id="class" class="form-control">
+                                <option value="0" selected>Select Class... </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                        <input type="button" class="btn btn-primary" id="submit" value="Submit Registration" onclick="postform()"/>
+                        </div>
+                    </div>
+                <div class="col-md-4"></div>
+			</div><!-- row -->
+		</div><!-- container -->
+
+
+
+		<div class="container" id="contact" name="contact">
+			<div class="row">
+			<br>
+				<br>
+				<br>
+				<div class="col-lg-6">
+					<h3>Contact Information</h3>
+					<p>
+						<span class="icon icon-envelop"></span> <a href="#">citycentreschool@gmail.com</a> <br/>
+						<span class="icon icon-twitter"></span> <a href="#"> @citycentreschool </a> <br/>
+						<span class="icon icon-facebook"></span> <a href="#"> City Centre School </a> <br/>
+					</p>
+				</div><!-- col -->
+
+
+				<div class="col-lg-6">
+					<p></p>
+				</div><!-- col -->
+
+			</div><!-- row -->
+
+		</div><!-- container -->
+
+		<div id="footerwrap">
+			<div class="container">
+            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+			</div>
+		</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    </script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/retina.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+  </body>
 </html>
