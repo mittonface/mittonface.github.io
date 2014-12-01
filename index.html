@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:og="http://ogp.me/ns#"
+xmlns:fb="http://www.facebook.com/2008/fbml">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/icomoon.css">
     <link href="assets/css/animate-custom.css" rel="stylesheet">
 
-
+    <meta property="og:image" content="http://citycentreschool.ca/assets/img/bg/divider1.jpg" / >
     
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
@@ -30,6 +32,17 @@
       <script src="assets/js/html5shiv.js"></script>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+
+      <style>
+        .course {
+          display: none;
+        }
+
+        .course-link{
+          cursor: pointer;
+        }
+
+      </style>
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
@@ -52,10 +65,25 @@
 			<li class="dropdown"> <a href="#classes" class="smoothScroll dropdown-toggle"> Classes</a></li>
 			<li> <a href="#sponsors" class="smoothScroll"> Sponsors</a></li>
 			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
-              <li> <a href="#" class="smoothScroll"> Register</a></li>
+              <li> <a href="register.html" class="smoothScroll"> Register</a></li>
         </div><!--/.nav-collapse -->
       </div>
     </div>
+
+        <!--<div class="container" id="classes" name="classes">-->
+			<!--<br>-->
+			<!--<br>-->
+			<!--<div class="row">-->
+				<!--<h2 class="centered">CLASSES</h2>-->
+				<!--<hr>-->
+				<!--<br>-->
+                <!--<div class='col-lg-12 centered'>-->
+                    <!--<i> List of classes coming soon... </i>-->
+                <!--</div>-->
+                <!--<h1> &nbsp; </h1>-->
+
+            <!--</div>-->
+        <!--</div>-->
     </div>
 
   
@@ -67,9 +95,10 @@
                     <p>City Centre School</p>
 	  		 		<p>Classes start January 2015</p>
 	  		 		<h2> &nbsp; </h2>
-	  		 		<a href="#" class="btn btn-success btn-lg">Online Pre-Registration Starts December 1st</a>
+	  		 		<a href="register.html" class="btn btn-success btn-lg">Pre-Registration Now</a>
 	  		</header>	    
 	    </div><!-- /headerwrap -->
+        <!-- photo credit Torsten Reimer, https://www.flickr.com/photos/torstenreimer -->
 
 		
 		<!-- ==== ABOUT ==== -->
@@ -107,7 +136,7 @@
                 </div>
                 <div class="col-lg-8 centered">
                     <strong>
-                    Online Pre-registration starts <u>December 1st</u>. Seats will also be reserved for in-person registration opening night, <u>January 6th</u> at Colonel Gray.
+                    Online Pre-registration happening now. Seats will also be reserved for in-person registration opening night, <u>January 6th</u> at Colonel Gray.
                     </strong>
                 </div>
                 <div class="col-lg-2">
@@ -122,6 +151,7 @@
 			<h1> &nbsp;</h1>
 			<h1> &nbsp;</h1>
 			</div><!-- container -->
+            <!-- Photo credit Robert Linsdell, https://www.flickr.com/photos/boblinsdell -->
 		</section><!-- section -->
 		
 		<section id="greywrap">
@@ -131,197 +161,337 @@
 			</div><!-- container -->
 		</section>
 		<!-- ==== classes ==== -->
-		<div class="container" id="classes" name="classes">
+		<!--<div class="container" id="classes" name="classes">-->
+			<!--<br>-->
+			<!--<br>-->
+			<!--<div class="row">-->
+				<!--<h2 class="centered">CLASSES</h2>-->
+				<!--<hr>-->
+				<!--<br>-->
+                <!--<div class='col-lg-12 centered'>-->
+                    <!--<i> List of classes coming soon... </i>-->
+                <!--</div>-->
+                <!--<h1> &nbsp; </h1>-->
+
+            <!--</div>-->
+        <!--</div>-->
+    <!---->
+		<div class="container class-container" id="classes" name="classes-container">
 			<br>
 			<br>
 			<div class="row">
 				<h2 class="centered">CLASSES</h2>
 				<hr>
 				<br>
-                <div class='col-lg-12 centered'>
-                    <i> List of classes coming soon... </i>
+                <div class="col-lg-2"></div>
+                <div class='col-lg-4 centered'>
+                    <ul>
+                        <li><a id='photo' class="course-link">Photography</a></li>
+                        <li><a id='belly' class="course-link">Belly Dance For Beginners</a></li>
+                        <li><a id='knitting' class="course-link">Knitting & Crocheting</a></li>
+                        <li><a id='writing' class="course-link">Writing The Short Story</a></li>
+                    </ul>
+                </div>
+                <div class='col-lg-4 centered'>
+                    <ul>
+                        <li><a id='improv' class="course-link">The Fun of Improv Drama</a></li>
+                        <li><a id='yoga' class="course-link">Exploring Yoga & Meditation</a></li>
+                        <li><a id='computing' class="course-link">Interactive Computing</a></li>
+                        <li><a id='lifestyle' class="course-link">Transitioning Toward a Plant-Based Lifestyle</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2"></div>
+
+                <h1> &nbsp; </h1>
+            </div>
+        </div>
+        <!-- Specific classes -->
+
+
+		<div class="container course" id="computing-container" name="computing-container">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">INTERACTIVE COMPUTING</h2>
+				<hr>
+				<br>
+                <div class='col-lg-3 centered'>
+                    <img class="img img-circle" src="img/computing-square.jpeg"/> <br/>
+                    <h3>Matt Duffy</h3>
+                </div>
+                <div class='col-lg-9'>
+                    <h4>Course Description</h4>
+                    <p>You have regular access to a computer; you can turn on a computer; you can find, open and
+                    install new programs on your computer; you see all these programs and files and wonder how
+                    they work and how to make your own computer programs. You think: ‘all this computer stuff is
+                    nice, but how can I use it to make the changes I want to see in my environment?’ You’re ready to
+                    take the next steps but aren’t sure exactly where to begin. <br/> <br/>
+                    If you decide to join, for a bit of context we’ll start with a whirlwind tour of the major
+                    developments in Computation and Information Systems. We’ll also talk about recent
+                    developments in the Maker movement: people who are leveraging the increasing power and
+                    decreasing cost of technology to do truly amazing things for themselves like process automation,
+                    data collection, and 3D printing.<br><br>
+
+                    Then you’ll gain the tools you need to do these sorts of things for yourself.
+                    </p>
+
+                    <h4>About Matt</h4>
+                    <p>
+                        Matt Duffy has been successfully taking things apart for decades, and has on several occasions
+                        has managed to successfully put them back together. His megalomaniacal tendencies have led
+                        to to use computers to exert control over the world around him. His gentler tendencies have led
+                        him to offer to teach these skills to his community.
+                    </p>
+                    <p><a href="register.html#computing" class="btn btn-success">Register Now</a></p>
                 </div>
                 <h1> &nbsp; </h1>
 
             </div>
         </div>
 
-        <!-- Specific classes -->
+		<div class="container course" id="lifestyle-container" name="lifestyle-container">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">TRANSITIONING TOWARDS A PLANT-BASED LIFESTYLE</h2>
+				<hr>
+				<br>
+                <div class='col-lg-3 centered'>
+                    <img class="img img-circle" src="img/lifestyle-square.png"/> <br/>
+                    <h3>Hilary Wood</h3>
+                </div>
+                <div class='col-lg-9'>
+                    <h4>Course Description</h4>
+                    <p>
+                      Eating real, whole, plant-based foods are essential in life. This course will not only teach you
+                      about transitioning into a vegetarian or vegan lifestyle, but will also discuss the
+                      modern food industry and its problems. <br><br>
+
+                    Topics that will be covered in this course:
+                    <ul style="list-style-type:circle;">
+                        <li>reasons to go plant-based</li>
+                        <li>myths of vegetarian/vegan diets</li>
+                        <li>nutrition tips</li>
+                        <li>healthy meal planning</li>
+                        <li>getting back to the basics of real food</li>
+                        <li>more!</li>
+                    </ul>
+                    </p>
+
+                    <h4>About Hilary</h4>
+                    <p>
+                        Having recently graduated from the Holistic Nutrition program at the Canadian School of
+                        Natural Nutrition in Moncton, New Brunswick, Hilary Wood brings her knowledge of
+                        nutrition to the City Centre Community School this winter. Along with her education,
+                        Hilary has personal experience with living a plant-based lifestyle, as she was vegetarian
+                        for most of her life and is now a vegan who is very passionate on the subject of living a
+                        healthy, animal-product free life.
+                    </p>
+                    <p><a href="register.html#lifestyle" class="btn btn-success">Register Now</a></p>
+                </div>
+                <h1> &nbsp; </h1>
+
+            </div>
+        </div>
+    	<div class="container course" id="improv-container" name="improv-container">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">THE FUN OF IMPROV DRAMA</h2>
+				<hr>
+				<br>
+                <div class='col-lg-3 centered'>
+                    <img class="img img-circle" src="img/drama-square.png"/> <br/>
+                    <h3>Ruth Lacey</h3>
+                </div>
+                <div class='col-lg-9'>
+                    <h4>Course Description</h4>
+                    <p>The main goal of the classes will be to have fun and gradually <u>AND GENTLY</u> build up the skills of creating a team, and learning to
+                    think on one's feet and creatively and imaginatively problem solve. The games cause participants to lose themselves in laughter,
+                    confidence and joy through the fun of sorting out the problems in pairs or groups. Examples of some of the beginning exercises/
+                    games would be: mirror exercise, slide show, sound scape, conducted story, and what am I doing?</p>
+
+                    <h4>About Ruth</h4>
+                    <p>
+                        Ruth Lacey has been teaching Improv to all ages for 12 years. Her groups have performed and competed publicly with great
+                        success. She was in both Murder in The Cathedral and Jesus Christ Superstar with ACT in 2004 after which she decided to devote
+                        her time to teaching and helping others create their own material. Her Improv teachers were Laurie Murphy, founder and leader of
+                        F.I.G.H.T. Improv Troupe, and Rob Thompson of Sketch-22 and other Improv comedy troupes.
+                    </p>
+                    <p><a href="register.html#improv" class="btn btn-success">Register Now</a></p>
+                </div>
+                <h1> &nbsp; </h1>
+
+            </div>
+        </div>
 
 
-		<!--<div class="container" id="computing" name="computing">-->
-			<!--<br>-->
-			<!--<br>-->
-			<!--<div class="row">-->
-				<!--<h2 class="centered">INTERACTIVE COMPUTING</h2>-->
-				<!--<hr>-->
-				<!--<br>-->
-                <!--<div class='col-lg-3 centered'>-->
-                    <!--<img class="img img-circle" src="img/computing-square.jpeg"/> <br/>-->
-                    <!--<h3>Matt Duffy</h3>-->
-                <!--</div>-->
-                <!--<div class='col-lg-9'>-->
-                    <!--You have regular access to a computer; you can turn on a computer; you can find, open and-->
-                    <!--install new programs on your computer; you see all these programs and files and wonder how-->
-                    <!--they work and how to make your own computer programs. You think: ‘all this computer stuff is-->
-                    <!--nice, but how can I use it to make the changes I want to see in my environment?’ You’re ready to-->
-                    <!--take the next steps but aren’t sure exactly where to begin. <br/> <br/>-->
-                    <!--If you decide to join, for a bit of context we’ll start with a whirlwind tour of the major-->
-                    <!--developments in Computation and Information Systems. We’ll also talk about recent-->
-                    <!--developments in the Maker movement: people who are leveraging the increasing power and-->
-                    <!--decreasing cost of technology to do truly amazing things for themselves like process automation,-->
-                    <!--data collection, and 3D printing.<br><br>-->
+        <div class="container course" id="belly-container" name="belly-container">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">BELLY DANCE FOR BEGINNERS</h2>
+				<hr>
+				<br>
+                <div class='col-lg-3 centered'>
+                    <img class="img img-circle" src="img/belly-dance-square.jpg"/> <br/>
+                    <h3>Tammy MacDonald</h3>
+                </div>
+                <div class='col-lg-9'>
+                    <h4>Course Description</h4>
+                    <p>This course is for anyone and everyone interested in combining fun with some exercise. Stretch your comfort level, and yourself, in
+                    a new direction and try something new! Learn basic belly dance moves broken down into easy-to-follow steps, and combine them
+                    into a short dance choreography. All materials provided -- including veils and hip scarves.</p>
+                    <h4>About Tammy</h4>
+                    <p>
+                        Tammy MacDonald loves to move and to teach. With six years experience teaching belly dance at various PEI community schools,
+                        Tammy hopes to see you in class!
+                    </p>
+                    <p><a href="register.html#belly" class="btn btn-success">Register Now</a></p>
+                </div>
+                <h1> &nbsp; </h1>
 
-                    <!--Then you’ll gain the tools you need to do these sorts of things for yourself.-->
-                <!--</div>-->
-                <!--<h1> &nbsp; </h1>-->
-
-            <!--</div>-->
-        <!--</div>-->
-
-    	<!--<div class="container" id="drama" name="drama">-->
-			<!--<br>-->
-			<!--<br>-->
-			<!--<div class="row">-->
-				<!--<h2 class="centered">THE FUN OF IMPROV DRAMA</h2>-->
-				<!--<hr>-->
-				<!--<br>-->
-                <!--<div class='col-lg-3 centered'>-->
-                    <!--<img class="img img-circle" src="img/drama-square.png"/> <br/>-->
-                    <!--<h3>Ruth Lacey</h3>-->
-                <!--</div>-->
-                <!--<div class='col-lg-9'>-->
-                    <!--The main goal of the classes will be to have fun and gradually <u>AND GENTLY</u> build up the skills of creating a team, and learning to-->
-                    <!--think on one's feet and creatively and imaginatively problem solve. The games cause participants to lose themselves in laughter,-->
-                    <!--confidence and joy through the fun of sorting out the problems in pairs or groups. Examples of some of the beginning exercises/-->
-                    <!--games would be: mirror exercise, slide show, sound scape, conducted story, and what am I doing?-->
-                <!--</div>-->
-                <!--<h1> &nbsp; </h1>-->
-
-            <!--</div>-->
-        <!--</div>-->
+            </div>
+        </div>
 
 
-        <!--<div class="container" id="belly-dance" name="belly-dance">-->
-			<!--<br>-->
-			<!--<br>-->
-			<!--<div class="row">-->
-				<!--<h2 class="centered">BELLY DANCE FOR BEGINNERS</h2>-->
-				<!--<hr>-->
-				<!--<br>-->
-                <!--<div class='col-lg-3 centered'>-->
-                    <!--<img class="img img-circle" src="img/belly-dance-square.jpg"/> <br/>-->
-                    <!--<h3>Tammy MacDonald</h3>-->
-                <!--</div>-->
-                <!--<div class='col-lg-9'>-->
-                    <!--This course is for anyone and everyone interested in combining fun with some exercise. Stretch your comfort level, and yourself, in-->
-                    <!--a new direction and try something new! Learn basic belly dance moves broken down into easy-to-follow steps, and combine them-->
-                    <!--into a short dance choreography. All materials provided -- including veils and hip scarves.-->
-                <!--</div>-->
-                <!--<h1> &nbsp; </h1>-->
+        <div class="container course" id="photo-container" name="photo-container">
+            <div id="classes"></div>
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">PHOTOGRAPHY</h2>
+				<hr>
+				<br>
+                <div class='col-lg-3 centered'>
+                    <img class="img img-circle" src="img/photo-square.jpg"/> <br/>
+                    <h3>Patrick Callbeck</h3>
+                </div>
+                <div class='col-lg-9'>
+                    <h4>Course Description</h4>
+                    <p>Cameras these days have tons of features and just about any camera
+                    can take a decent picture. The problem is knowing what all those settings do!
+                    In our photography course you will learn photography basics such as how to frame a
+                    photo, lighting, and techniques to getting the most out of your camera. Other
+                    styles will be taught using different cameras and processes for getting the
+                    most out of your picture opportunities.</p>
+                    <h4>About Patrick</h4>
+                    <p>
+                        As a graduate of the Loyalist College's Photojournalism program, Patrick has extensive experience as a freelance
+                        photojournalist and videographer.  Based out of Charlottetown, you may know Patrick by his director role with
+                        the Rainbow Valley documentary. This is our second year having Patrick Callbeck teach a
+                        photography course at City Centre Community School and we're thrilled he's such a keener at sharing his skills!
+                    </p>
+                    <p><a href="register.html#photo" class="btn btn-success">Register Now</a></p>
+                </div>
+                <h1> &nbsp; </h1>
+            </div>
+        </div>
 
-            <!--</div>-->
-        <!--</div>-->
+        <div class="container course" id="yoga-container" name="yoga-container">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">EXPLORING YOGA & MEDITATION</h2>
+				<hr>
+				<br>
+                <div class='col-lg-3 centered'>
+                    <img class="img img-circle" src="img/meditation-square.jpg"/> <br/>
+                    <h3>Kirstin Sweet</h3>
+                </div>
+                <div class='col-lg-9'>
+                    <h4>Course Description</h4>
+                    <p>Throughout the ten weeks we will explore many different styles of yoga and meditation.
+                    Focusing on the connection of the body and breath, each week we will move through a series of
+                    asanas (poses) tailored to the interests and abilities of students. We will pay special attention
+                    to correct alignment in the asanas and control of the breath. Classes will cater to all levels
+                    of experience. As yoga involves much more than physical movement, the second half of class will
+                    focus on different meditation techniques and their connection to our daily lives. Meditation
+                    is the practice of calming and focusing the mind. Through forms of active and passive meditation
+                    we will work on developing mindfulness.</p>
+                    <h4>About Kirstin</h4>
+                    <p>
+                        Kirstin Sweet has been practicing various styles of yoga for several years. She has developed a
+                        true passion for the practice and believes that absolutely everyone can do yoga. In 2014, Kirstin
+                        traveled to India and completed a yoga teacher training course in the foothills of the Himalayas.
+                        There she learned how to effectively lead students in many styles of yoga and discovered many different
+                        meditation techniques. She is excited to share her knowledge and passion for yoga with the students of
+                        City Centre Community School!
+                    </p>
+                    <p><a href="register.html#yoga" class="btn btn-success">Register Now</a></p>
+                </div>
+                <h1> &nbsp; </h1>
+            </div>
+        </div>
 
 
-        <!--<div class="container" id="photo" name="photo">-->
-			<!--<br>-->
-			<!--<br>-->
-			<!--<div class="row">-->
-				<!--<h2 class="centered">PHOTOGRAPHY</h2>-->
-				<!--<hr>-->
-				<!--<br>-->
-                <!--<div class='col-lg-3 centered'>-->
-                    <!--<img class="img img-circle" src="img/photo-square.jpg"/> <br/>-->
-                    <!--<h3>Patrick Callbeck</h3>-->
-                <!--</div>-->
-                <!--<div class='col-lg-9'>-->
-                    <!--Cameras these days have tons of features and just about any camera-->
-                    <!--can take a decent picture. The problem is knowing what all those settings do!-->
-                    <!--In our photography course you will learn photography basics such as how to frame a-->
-                    <!--photo, lighting, and techniques to getting the most out of your camera. Other-->
-                    <!--styles will be taught using different cameras and processes for getting the-->
-                    <!--most out of your picture opportunities.-->
-                <!--</div>-->
-                <!--<h1> &nbsp; </h1>-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="container course" id="knitting-container" name="knitting-container">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">KNITTING & CROCHETING</h2>
+				<hr>
+				<br>
+                <div class='col-lg-3 centered'>
+                    <img class="img img-circle" src="img/knitting-square.jpg"/> <br/>
+                    <h3>Blair Cowan</h3>
+                </div>
+                <div class='col-lg-9'>
+                    <h4>Course Description</h4>
+                    <p>Tired of seeing those cute hats and scarves all winter and not
+                    being able to make them? Have a family and want to make lots of
+                    winter wear on a budget? This course is for you! Learn to knit and
+                    crochet! You will learn some simple patterns for dish­cloths, hats,
+                    and scarves. </p>
+                    <h4>About Blair</h4>
+                    <p>Blair has been knitting for more than 20 years
+                    and crocheting for about half that time. She loves making fun patterns
+                    and fashionable knits and thinks that knitting and crocheting are both
+                    fun and important skills to have! It can also be a great form of meditation
+                    and great opportunity to vent.</p>
+                    <p><a href="register.html#knitting" class="btn btn-success">Register Now</a></p>
+                </div>
+                <h1> &nbsp; </h1>
+            </div>
+        </div>
 
-        <!--<div class="container" id="meditation" name="meditation">-->
-			<!--<br>-->
-			<!--<br>-->
-			<!--<div class="row">-->
-				<!--<h2 class="centered">EXPLORING YOGA & MEDITATION</h2>-->
-				<!--<hr>-->
-				<!--<br>-->
-                <!--<div class='col-lg-3 centered'>-->
-                    <!--<img class="img img-circle" src="img/meditation-square.jpg"/> <br/>-->
-                    <!--<h3>Kirstin Sweet</h3>-->
-                <!--</div>-->
-                <!--<div class='col-lg-9'>-->
-                    <!--Throughout the ten weeks we will explore many different styles of yoga and meditation.-->
-                    <!--Focusing on the connection of the body and breath, each week we will move through a series of-->
-                    <!--asanas (poses) tailored to the interests and abilities of students. We will pay special attention-->
-                    <!--to correct alignment in the asanas and control of the breath. Classes will cater to all levels-->
-                    <!--of experience. As yoga involves much more than physical movement, the second half of class will-->
-                    <!--focus on different meditation techniques and their connection to our daily lives. Meditation-->
-                    <!--is the practice of calming and focusing the mind. Through forms of active and passive meditation-->
-                    <!--we will work on developing mindfulness.-->
-                <!--</div>-->
-                <!--<h1> &nbsp; </h1>-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="container course" id="writing-container" name="writing-container">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">WRITING THE SHORT STORY</h2>
+				<hr>
+				<br>
+                <div class='col-lg-3 centered'>
+                    <img class="img img-circle" src="img/writing-square.jpg"/> <br/>
+                    <h3>Cindy Lape&ntilde;a</h3>
+                </div>
+                <div class='col-lg-9'>
+                    <h4>Course Description</h4>
 
+                    <p>Not for the faint-hearted, Writing the Short Story is a workshop course for participants
+                    who want to learn how to write a short story by experiencing the actual process of writing
+                    one (or several!). They will learn a little about the history of short stories, and everything
+                    they need to know about what is needed to write a good short story. After the first meeting,
+                    participants will experience several writing exercises that will result in the writing of
+                    a short short story (often called flash fiction) or a component of a story. Works will be
+                    published online in The Writing Pool (unless otherwise declared).</p>
 
-        <!--<div class="container" id="knitting" name="knitting">-->
-			<!--<br>-->
-			<!--<br>-->
-			<!--<div class="row">-->
-				<!--<h2 class="centered">KNITTING & CROCHETING</h2>-->
-				<!--<hr>-->
-				<!--<br>-->
-                <!--<div class='col-lg-3 centered'>-->
-                    <!--<img class="img img-circle" src="img/knitting-square.jpg"/> <br/>-->
-                    <!--<h3>Blair Cowan</h3>-->
-                <!--</div>-->
-                <!--<div class='col-lg-9'>-->
-                    <!--Tired of seeing those cute hats and scarves all winter and not-->
-                    <!--being able to make them? Have a family and want to make lots of-->
-                    <!--winter wear on a budget? This course is for you! Learn to knit and-->
-                    <!--crochet! You will learn some simple patterns for dish­cloths, hats,-->
-                    <!--and scarves. Blair has been knitting for more than 20 years-->
-                    <!--and crocheting for about half that time. She loves making fun patterns-->
-                    <!--and fashionable knits and thinks that knitting and crocheting are both-->
-                    <!--fun and important skills to have! It can also be a great form of meditation-->
-                    <!--and great opportunity to vent.-->
-                <!--</div>-->
-                <!--<h1> &nbsp; </h1>-->
-            <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="container" id="writing" name="writing">-->
-			<!--<br>-->
-			<!--<br>-->
-			<!--<div class="row">-->
-				<!--<h2 class="centered">WRITING THE SHORT STORY</h2>-->
-				<!--<hr>-->
-				<!--<br>-->
-                <!--<div class='col-lg-3 centered'>-->
-                    <!--<img class="img img-circle" src="img/writing-square.jpg"/> <br/>-->
-                    <!--<h3>Cindy Lape&ntilde;a</h3>-->
-                <!--</div>-->
-                <!--<div class='col-lg-9'>-->
-                    <!--Not for the faint-hearted, Writing the Short Story is a workshop course for participants-->
-                    <!--who want to learn how to write a short story by experiencing the actual process of writing-->
-                    <!--one (or several!). They will learn a little about the history of short stories, and everything-->
-                    <!--they need to know about what is needed to write a good short story. After the first meeting,-->
-                    <!--participants will experience several writing exercises that will result in the writing of-->
-                    <!--a short short story (often called flash fiction) or a component of a story. Works will be-->
-                    <!--published online in The Writing Pool (unless otherwise declared).-->
-                <!--</div>-->
-                <!--<h1> &nbsp; </h1>-->
-            <!--</div>-->
-        <!--</div>-->
+                    <h4>About Cindy</h4>
+                    <p>
+                        Cindy Lapeña returns to the City Centre Community School to teach a course on Writing
+                        the Short Story. A published writer, blogger, and owner/publisher of <a href="http://www.thewritingpool.com">The Writing Pool</a>,
+                        Cindy has extensive teaching experience at the high school
+                        and university levels. As a training consultant, she has delivered numerous seminars and
+                        workshop courses on a variety of topics. She holds a Master of Arts degree in English
+                        Literature with a focus on Creative Writing and Drama. In 2014, she taught How to Write a
+                        Novel in 10 Days at the City Centre Community School.
+                    </p>
+                    <p><a href="register.html#writing" class="btn btn-success">Register Now</a></p>
+                </div>
+                <h1> &nbsp; </h1>
+            </div>
+        </div>
 
 		<!-- ==== SECTION DIVIDER2 -->
 		<section class="section-divider textdivider divider2">
@@ -330,6 +500,7 @@
                 <h1> &nbsp;</h1>
 			</div><!-- container -->
 		</section><!-- section -->
+        <!-- photo credit Patrick Imbeau, https://www.flickr.com/photos/20500932@N06 -->
 
 		<!-- ==== sponsors ==== -->
 		<div class="container" id="sponsors" name="sponsors">
@@ -376,6 +547,7 @@
                 <h1>&nbsp;</h1>
 			</div><!-- container -->
 		</section><!-- section -->
+    <!-- photo credit Martin Cathrae, https://www.flickr.com/photos/suckamc -->
 		
 		<div class="container" id="contact" name="contact">
 			<div class="row">
@@ -403,7 +575,7 @@
 
 		<div id="footerwrap">
 			<div class="container">
-                This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                All items except instructor photos(all rights reserved) are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 			</div>
 		</div>
 
@@ -417,5 +589,58 @@
 	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+
+    <!-- for switching course divs -->
+    <script type="text/javascript">
+
+        $(".course-link").click(function(){
+            switch(this.id){
+                case "photo":
+                    switch_course(this.id);
+                    $("#photo-container").show("fast");
+                    break;
+                case "belly":
+                    switch_course(this.id);
+                    $("#belly-container").show("fast");
+                    break;
+                case "knitting":
+                    switch_course(this.id);
+                    $("#knitting-container").show("fast");
+                    break;
+                case "writing":
+                    switch_course(this.id);
+                    $("#writing-container").show("fast");
+                    break;
+                case "improv":
+                    switch_course(this.id);
+                    $("#improv-container").show("fast");
+                    break;
+                case "yoga":
+                    switch_course(this.id);
+                    $("#yoga-container").show("fast");
+                    break;
+                case "computing":
+                    switch_course(this.id);
+                    $("#computing-container").show("fast");
+                    break;
+                case "lifestyle":
+                    switch_course(this.id);
+                    $("#lifestyle-container").show("fast");
+                    break;
+            }
+        });
+
+        function switch_course(id){
+            if (id != "belly") { $("#belly-container").hide("fast"); }
+            if (id != "photo") { $("#photo-container").hide("fast"); }
+            if (id != "knitting") { $("#knitting-container").hide("fast"); }
+            if (id != "writing") { $("#writing-container").hide("fast"); }
+            if (id != "improv") { $("#improv-container").hide("fast"); }
+            if (id != "yoga") { $("#yoga-container").hide("fast"); }
+            if (id != "computing") { $("#computing-container").hide("fast"); }
+            if (id != "lifestyle") { $("#lifestyle-container").hide("fast"); }
+
+        }
+    </script>
   </body>
 </html>
