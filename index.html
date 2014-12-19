@@ -197,6 +197,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
                         <li><a id='improv' class="course-link">The Fun of Improv Drama</a></li>
                         <li><a id='yoga' class="course-link">Exploring Yoga & Meditation</a></li>
                         <li><a id='computing' class="course-link">Interactive Computing</a></li>
+                        <li><a id='speaking' class="course-link">Communication & Impromptu Speaking</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2"></div>
@@ -247,7 +248,62 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
 
             </div>
         </div>
+		<div class="container course" id="speaking-container" name="speaking-container">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">COMMUNICATION & IMPROMPTU SPEAKING</h2>
+				<hr>
+				<br>
+                <div class='col-lg-3 centered'>
+                    <img class="img img-circle" src="img/darlene-square.png"/> <br/>
+                    <h3>Darlene Dunn</h3>
+                    <img class="img img-circle" src="img/sean-square.png"/> <br/>
+                    <h3>Sean Booth</h3>
+                    <img class="img img-circle" src="img/sarah-square.png"/> <br/>
+                    <h3>Sarah Brown</h3>
 
+
+                </div>
+                <div class='col-lg-9'>
+                    <h4>Course Description</h4>
+                    <p>
+The class will be led by experienced Toastmasters in a fun, comfortable and supportive environment.  We will cover a number of topics that will help students learn to communicate effectively, including the following:</p>
+<ul style="list-style-type:circle;">
+<li>Take the Terror Out of a Talk </li>
+<li>Organize your message</li>
+<li>Construct a Speech</li>
+<li>How to Relate to Your Audience</li>
+<li>Gestures</li>
+<li>Vocal Variety</li>
+<li>Using Visual Aids</li>
+</ul>
+<p>
+Some of the benefits to the participants attending the class would be:
+</p>
+<ul style="list-style-type:circle;">
+<li>Learn to communicate clearly</li>
+<li>Learn to communicate with confidence</li>
+<li>Ace job interviews</li>
+<li>Organize their messages and learn how to present their ideas</li>
+<li>Learn to think & communicate "quick on your feet" </li>
+</ul>
+                    <h4>About the Toastmasters</h4>
+                    <p>
+                    <strong>Darlene Dunn</strong> has been a Toastmaster for almost 7 years.  She is currently the club President of Premiere Toastmasters and also belongs to Spotlight Toastmasters which is an advanced Toastmasters club.  Darlene is excited to share what she has learned from the Toastmasters program and credits Toastmasters for opening many doors both professionally and personally!
+                    </p>
+                    <p>
+<strong>Sean Booth </strong> is a Product Line Manager for Carestream Health where he manages a business unit in the healthcare industry.  He currently lives in Greenwich PEI, and has been an active member of Charlottetown Premiere Toastmasters for the past three years.   Sean serves as the VP Education at the Toastmasters club, and is a board member of the PEI French Language School Board.  Sean enjoys speaking and the art of communicating, and as has had the fortune to give both sales and educational presentations all over the world.
+                    </p>
+                    <p>
+                     <strong>Sarah Brown</strong> has been a member of Toastmasters International for more than 10 years and has held various executive positions within her home club, Premiere Toastmasters. In addition to public speaking, Sarah has dabbled in improv, and even stand-up comedy. 
+                    </p>
+                    <p><a href="register.html#speaking" class="btn btn-success">Register Now</a></p>
+                </div>
+                <h1> &nbsp; </h1>
+
+            </div>
+        </div>
 		<div class="container course" id="lifestyle-container" name="lifestyle-container">
 			<br>
 			<br>
@@ -626,9 +682,9 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
                     switch_course(this.id);
                     $("#computing-container").show("fast");
                     break;
-                case "lifestyle":
+                case "speaking":
                     switch_course(this.id);
-                    $("#lifestyle-container").show("fast");
+                    $("#speaking-container").show("fast");
                     break;
             }
         });
@@ -641,7 +697,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
             if (id != "improv") { $("#improv-container").hide("fast"); }
             if (id != "yoga") { $("#yoga-container").hide("fast"); }
             if (id != "computing") { $("#computing-container").hide("fast"); }
-            if (id != "lifestyle") { $("#lifestyle-container").hide("fast"); }
+            if (id != "speaking") { $("#speaking-container").hide("fast"); }
 
         }
     </script>
