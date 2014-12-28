@@ -190,6 +190,8 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
                         <li><a id='belly' class="course-link">Belly Dance For Beginners</a></li>
                         <li><a id='knitting' class="course-link">Knitting & Crocheting</a></li>
                         <li><a id='writing' class="course-link">Writing The Short Story</a></li>
+                        <li><a id='latin' class="course-link">Introduction to Latin</a></li>
+
                     </ul>
                 </div>
                 <div class='col-lg-4 centered'>
@@ -198,6 +200,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
                         <li><a id='yoga' class="course-link">Exploring Yoga & Meditation</a></li>
                         <li><a id='computing' class="course-link">Interactive Computing</a></li>
                         <li><a id='speaking' class="course-link">Communication & Impromptu Speaking</a></li>
+
                     </ul>
                 </div>
                 <div class="col-lg-2"></div>
@@ -206,7 +209,33 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
             </div>
         </div>
         <!-- Specific classes -->
+<div class="container course" id="latin-container" name="latin-container">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">INTERACTIVE COMPUTING</h2>
+				<hr>
+				<br>
+                <div class='col-lg-3 centered'>
+                    <br/>
+                    <h3>Victoria Goddard</h3>
+                </div>
+                <div class='col-lg-9'>
+                    <h4>Course Description</h4>
+                    <p>
+           Ever wanted to learn Latin, major language of literature, culture, and empire in western Europe for over 2000 years? Here's your chance! We'll start with basic vocabulary and grammar, and aim to be reading excerpts from real texts by the end of the course. This will be an introductory-level class, so if you've not studied a language since high school, that's fine: we'll be going over the basic rules of grammar, together with some tips on learning languages, in the first few classes. We'll also discuss some of the history and literature of the Latin language from ancient Rome to modern times. We will be using handouts rather than a textbook, but you will be expected to do some memorization.         
+                    </p>
 
+                    <h4>About Matt</h4>
+                    <p>
+Victoria Goddard is a novelist, gardener, and jobbing humanist. After finishing a stint as a teaching fellow in the Foundation Year Programme at the University of King's College (Halifax), she spent six months walking down the length of England, six months as the sexton of a church in Halifax, and moved to Charlottetown in September of this year to write and look for land. She has a PhD in Medieval Studies from the University of Toronto, where she studied Dante and Boethius (a late Roman philosopher) and medieval Latin allegory, and also taught Latin to both beginners and doctoral candidates (and sometimes both!). She's delighted to join the Community School in 2015.
+                    </p>
+                    <p><a href="register.html#latin" class="btn btn-success">Register Now</a></p>
+                </div>
+                <h1> &nbsp; </h1>
+
+            </div>
+        </div>
 
 		<div class="container course" id="computing-container" name="computing-container">
 			<br>
@@ -686,6 +715,10 @@ Some of the benefits to the participants attending the class would be:
                     switch_course(this.id);
                     $("#speaking-container").show("fast");
                     break;
+                case "latin":
+                    switch_course(this.id);
+                    $("#latin-container").show("fast");
+                    break;                    
             }
         });
 
@@ -698,6 +731,8 @@ Some of the benefits to the participants attending the class would be:
             if (id != "yoga") { $("#yoga-container").hide("fast"); }
             if (id != "computing") { $("#computing-container").hide("fast"); }
             if (id != "speaking") { $("#speaking-container").hide("fast"); }
+            if (id != "latin") { $("#latin-container").hide("fast"); }
+
 
         }
     </script>
