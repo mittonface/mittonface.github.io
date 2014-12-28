@@ -60,6 +60,9 @@
                 case "speaking":
                     proper_class_name = "Communication & Impromptu Speaking";
                     break;
+                case "latin":
+                    proper_class_name = "Introduction to Latin";
+                    break;
 
             }
           // really simple form validation
@@ -196,6 +199,8 @@
                                 <option value="improv">The Fun Of Improv Drama</option>
                                 <option value="writing">Writing The Short Story</option>
                                 <option value="speaking">Communication & Impromptu Speaking</option>
+                                <option value="latin">Introduction to Latin</option></option>
+
                             </select>
                         </div>
                         <div class="form-group">
@@ -279,6 +284,9 @@
                         break;
                     case "speaking":
                         $("#class").val('speaking');
+                        break;
+                    case "latin":
+                        $("#class").val('latin');
                         break;
                 }
             }
