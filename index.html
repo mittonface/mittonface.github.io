@@ -200,6 +200,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
                         <li><a id='yoga' class="course-link">Exploring Yoga & Meditation</a></li>
                         <li><a id='computing' class="course-link">Interactive Computing</a></li>
                         <li><a id='speaking' class="course-link">Communication & Impromptu Speaking</a></li>
+                        <li><a id='community' class="course-link">Cultivating Resilience In Your Community</a></li>
 
                     </ul>
                 </div>
@@ -581,7 +582,32 @@ Some of the benefits to the participants attending the class would be:
                 <h1> &nbsp; </h1>
             </div>
         </div>
+<div class="container course" id="community-container" name="community-container">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">CULTIVATING RESILIENCE IN YOUR COMMUNITY</h2>
+				<hr>
+				<br>
+                <div class='col-lg-3 centered'>
+                </div>
+                <div class='col-lg-9'>
+                    <h4>Course Description</h4>
 
+                    <p>This course will introduce you to ideas and learning resources for community resilience. Guest speakers and instructors will facilitate a collaborative enquiry with students into how we might cope with the challenges we face today and make the transition to a world that works. Topics we will explore together include sustainable energy solutions, creating food systems that work, identifying transportation possibilities, future proofing our homes and whole systems thinking. You can look forward to learning, thinking, conversing and creating in every class with a group of like-minded individuals.</p>
+
+                    <h4>About The Facilitators</h4>
+                    <p>
+This course will be facilitated by a dynamic, passionate group of action-oriented individuals including farmers, foodies, researchers, educators, entrepreneurs and other visionaries.  Together, they share a vision of PEI as a prosperous and sustainable Island community, boldly navigating a challenging future.  Each of them looks forward to sharing their unique knowledge, skills and energy, while also connecting with and learning from course participants.
+</p>
+<p>
+Course facilitators include:  Mathieu Arsenault, Shannon Courtney,  Phil Ferraro, Adam MacLean, Jordan MacPhee, Lyndsay Moffatt, Carla Morgan, Lisa Steele, and Allison Walsh. 
+                    </p>
+                    <p><a href="register.html#community" class="btn btn-success">Register Now</a></p>
+                </div>
+                <h1> &nbsp; </h1>
+            </div>
+        </div>
 		<!-- ==== SECTION DIVIDER2 -->
 		<section class="section-divider textdivider divider2">
 			<div class="container">
@@ -719,7 +745,11 @@ Some of the benefits to the participants attending the class would be:
                 case "latin":
                     switch_course(this.id);
                     $("#latin-container").show("fast");
-                    break;                    
+                    break;         
+                case "community":
+                    switch_course(this.id);
+                    $("#community-container").show("fast");
+                    break;                     
             }
         });
 
@@ -733,6 +763,8 @@ Some of the benefits to the participants attending the class would be:
             if (id != "computing") { $("#computing-container").hide("fast"); }
             if (id != "speaking") { $("#speaking-container").hide("fast"); }
             if (id != "latin") { $("#latin-container").hide("fast"); }
+            if (id != "community") { $("#community-container").hide("fast"); }
+
 
 
         }
