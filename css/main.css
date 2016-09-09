@@ -48,7 +48,7 @@ p {
 
 /* Links */
 a {
-    color: #1abc9c;
+    color: #FF6B6B;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -95,8 +95,8 @@ a:after {
 }
 
 .navbar-inverse {
-	background-color: #1abc9c;
-	border-color: #16a085;
+	background-color: #FF6B6B;
+	border-color: #C44D58;
 }
 
 .navbar-inverse .navbar-nav > li > a {
